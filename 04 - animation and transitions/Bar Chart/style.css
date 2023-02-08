@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Inter var";
+  src: url("../../Inter.var.woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Inter var", sans-serif;
+}
+
+svg text {
+  font-family: "Inter var", sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#wrapper svg {
+  width: 600px;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1.1rem;
+  background: hsl(84, 91%, 41%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  --border-width: 3px;
+  border-bottom: 2px solid hsl(120, 78%, 19%);
+  border-bottom: var(--border-width) solid hsl(120, 78%, 19%);
+  transition-property: background, border-bottom-color, transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+  transform-origin: 50% 100%;
+}
+
+button:hover {
+  background: hsl(83, 91%, 34%);
+}
+
+button:active {
+  border-bottom-color: transparent;
+  transform: translateY(2px);
+  transform: translateY(var(--border-width));
+}
