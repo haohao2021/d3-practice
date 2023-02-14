@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Inter var";
+  src: url("../../Inter.var.woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(210, 17%, 95%);
+  color: hsl(210, 29%, 12%);
+  font-family: "Inter var", sans-serif;
+}
+
+svg text {
+  font-family: "Inter var", sans-serif;
+}
+
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+article {
+  margin: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  padding: 1rem 0.75rem;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 1px 5px -4px hsl(210, 29%, 5%);
+}
+
+article > * + * {
+  margin-top: 0.25rem;
+}
+
+article h2 {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+article p {
+  font-size: 0.9rem;
+}
